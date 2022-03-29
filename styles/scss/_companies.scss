@@ -1,0 +1,17 @@
+.com {
+  padding-top: 5rem;
+  padding-button: 5rem;
+  &__title {
+    @include d-flex(center, center, column);
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 700;
+    }
+  }
+  &__photos {
+    @include f-wrap;
+    @include d-flex(space-between);
+    padding: 3rem 0;
+  }
+}

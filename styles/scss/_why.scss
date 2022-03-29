@@ -1,0 +1,69 @@
+.why {
+  padding-top: 10rem;
+  &__title {
+    @include d-flex;
+    flex-direction: column;
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+      color: $grey;
+      text-align: center;
+    }
+  }
+  &__boxes {
+    padding: 3rem 0;
+    @include grid(30rem);
+    gap: 3rem;
+    &__box {
+      @include d-flex;
+      @include f-wrap;
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem 2rem;
+
+      border-radius: 10px;
+      img {
+        width: 8rem;
+        height: 8rem;
+      }
+      h3 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.5rem;
+        color: $grey;
+      }
+    }
+    .box1 {
+      background: #fff3eb;
+    }
+    .box2 {
+      background: #ecedff;
+    }
+    .box3 {
+      background: #ffecf1;
+    }
+    .box4 {
+      background: #f7f7f7;
+    }
+    .box5 {
+      background: #fffaec;
+    }
+    .box6 {
+      background: #fff3eb;
+    }
+    .box7 {
+      background: #eefff3;
+    }
+    .box8 {
+      background: #ffecf1;
+    }
+    .box9 {
+      background: #ecedff;
+    }
+  }
+}

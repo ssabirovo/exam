@@ -1,0 +1,26 @@
+.pink1 {
+  @include d-flex(center, center, column);
+  background-color: rgb(253, 213, 220);
+  background-image: url(../../images/pink/pink.png);
+  border: 1px solid #e24329;
+  border-radius: 24px;
+  padding: 8rem 0;
+  h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    text-align: center;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  button {
+    @include btn;
+    background-color: $white;
+    color: $primary-color;
+    font-size: 2rem;
+    padding: 1rem 5rem;
+  }
+}

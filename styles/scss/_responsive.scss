@@ -1,0 +1,99 @@
+@media (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+  section {
+    padding: 3rem 5%;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 50%;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  .header__content {
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+    &__text {
+      @include d-flex(center, center, column);
+    }
+  }
+  .header__nav__menu {
+    display: none;
+  }
+  .header__nav {
+    .menuBtn {
+      display: inline-block;
+    }
+  }
+  .header__boxes {
+    @include f-wrap;
+  }
+  .app {
+    flex-direction: column-reverse;
+    text-align: center;
+    &__text {
+      @include d-flex;
+      flex-direction: column;
+      justify-content: center;
+      .appAp {
+        flex-direction: column;
+      }
+    }
+    &__photo {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 45%;
+  }
+  .apply {
+    flex-direction: column;
+    text-align: center;
+    &__text {
+      align-items: center;
+    }
+  }
+  .hola__content {
+    flex-direction: column;
+    &__text {
+      @include d-flex(center, center, column);
+      text-align: center;
+      .undov {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 40%;
+  }
+  .com__photos {
+    flex-direction: column;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 280px) {
+  html {
+    font-size: 40%;
+  }
+}

@@ -1,0 +1,18 @@
+.accardion {
+  padding: 2rem 10rem;
+  &__title {
+    @include d-flex();
+    flex-direction: column;
+    h1 {
+      font-weight: 700;
+      font-size: 4rem;
+      padding: 2rem 0;
+    }
+    p {
+      font-weight: 400;
+      font-size: 1.2rem;
+      color: $grey;
+      padding: 2rem 0;
+    }
+  }
+}
